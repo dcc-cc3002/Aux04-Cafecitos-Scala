@@ -9,8 +9,8 @@ package ingredients
   *    The name of the ingredient.
   */
 abstract class AbstractIngredient(
-    private val content: Int,
-    private val ingredientName: String
-) extends Ingredient {
+                                   override val content: Int,
+                                   private val ingredientName: String
+                                 ) extends Ingredient {
   override def toString: String = s"$ingredientName{content=$content}"
 }
